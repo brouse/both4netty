@@ -21,9 +21,9 @@ public class NettyServer {
         ServerBootstrap serverBootstrap = new ServerBootstrap();
 
         //创建连接的线程一个就够了
-        NioEventLoopGroup boss = new NioEventLoopGroup();
+        NioEventLoopGroup boss = new NioEventLoopGroup(1);
         //读取连接中内容的线程稍微大点
-        NioEventLoopGroup worker = new NioEventLoopGroup(4);
+        NioEventLoopGroup worker = new NioEventLoopGroup();
 
         //开始注册并初始化服务
         serverBootstrap
