@@ -42,6 +42,7 @@ public class NettyServer {
                 .bind(port);
 
         System.out.println("server start port:" + port);
+        System.out.println("test push");
     }
 
     public static void main(String[] args) {
