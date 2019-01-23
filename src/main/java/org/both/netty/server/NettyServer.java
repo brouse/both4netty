@@ -43,6 +43,7 @@ public class NettyServer {
 
         System.out.println("server start port:" + port);
         System.out.println("test push");
+        System.out.println("second commit...");
     }
 
     public static void main(String[] args) {
